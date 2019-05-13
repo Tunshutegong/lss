@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/li_menu0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:tag="0">
+
+            <ImageView
+                android:id="@+id/iv_tab_zero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_tab_home_selector"/>
+
+            <TextView
+                android:id="@+id/tv_tab_zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3.5dp"
+                android:duplicateParentState="true"
+                android:text="home"
+                android:textSize="9dp"/>
+
+        </LinearLayout>
+        <!-- 主页 -->
+
+        <LinearLayout
+            android:id="@+id/li_menu1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:tag="1">
+
+
+            <ImageView
+                android:id="@+id/iv_tab_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_tab_coupon_selector"/>
+
+            <TextView
+                android:id="@+id/tv_tab_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3.5dp"
+                android:duplicateParentState="true"
+                android:text="coupon"
+                android:textSize="9dp"/>
+        </LinearLayout>
+        <!-- 社区 -->
+
+        <RelativeLayout
+            android:id="@+id/li_menu2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:tag="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_tab_home_selector"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:paddingBottom="3dp">
+
+                <ImageView
+                    android:id="@+id/iv_tab_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:duplicateParentState="true"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_tab_home_selector"/>
+
+                <TextView
+                    android:id="@+id/tv_tab_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3.5dp"
+                    android:duplicateParentState="true"
+                    android:text="hunbohui"
+                    android:textSize="9dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 我的 -->
+
+        <LinearLayout
+            android:id="@+id/li_menu3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:tag="3">
+
+            <ImageView
+                android:id="@+id/iv_tab_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_tab_home_selector"/>
+
+            <TextView
+                android:id="@+id/tv_tab_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3.5dp"
+                android:duplicateParentState="true"
+                android:text="community"
+                android:textSize="9dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/li_menu4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:tag="4">
+
+            <ImageView
+                android:id="@+id/iv_tab_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_tab_home_selector"/>
+
+            <TextView
+                android:id="@+id/tv_tab_fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3.5dp"
+                android:duplicateParentState="true"
+                android:text="mine"
+                android:textSize="9dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

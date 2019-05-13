@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+    }
+
+    sourceSets {
+        main.java.srcDirs = ['src/main/java', 'src/main/libcache']
+        main.res.srcDirs = ['src/main/res']
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    /** rxjava**/
+    compile rootProject.ext.dependencies.rxjava
+    // rxandroid
+    compile rootProject.ext.dependencies.rxandroid
+    compile rootProject.ext.dependencies.appcompat_v7
+    compile rootProject.ext.dependencies.recyclerview_v7
+    compile rootProject.ext.dependencies.design
+    //rxlifecycle
+    compile rootProject.ext.dependencies.rxlifecycle
+    compile rootProject.ext.dependencies.rxlifecycleandroid
+    compile rootProject.ext.dependencies.rxpermissions
+    //glide
+    compile rootProject.ext.dependencies.glide
+    compile rootProject.ext.dependencies.transformations
+    compile rootProject.ext.dependencies.bitmappool
+    annotationProcessor rootProject.ext.dependencies.glide_compile
+    //rxretrofit
+    compile rootProject.ext.dependencies.rxretrofit
+    compile rootProject.ext.dependencies.rxretrofitgson
+    //okhttp
+    compile rootProject.ext.dependencies.okhttp
+    compile rootProject.ext.dependencies.loginterceptor
+    compile rootProject.ext.dependencies.integration
+    //网络debug跟踪
+    compile rootProject.ext.dependencies.stetho
+    compile rootProject.ext.dependencies.stethookhttp3
+    //eventBus
+    compile rootProject.ext.dependencies.eventbus
+    //butterknife
+    implementation rootProject.ext.dependencies.butterknife
+    //    annotationProcessor rootProject.ext.dependencies.butterknife_compiler
+    //lomok
+    compileOnly rootProject.ext.dependencies.lombok
+    annotationProcessor rootProject.ext.dependencies.lombok
+    //多dex支持
+    compile rootProject.ext.dependencies.multidex
+    compile rootProject.ext.dependencies.annotation_api
+}
